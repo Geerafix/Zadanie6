@@ -134,15 +134,16 @@ public class SensorActivity extends AppCompatActivity {
             Sensor sensor = sensorList.get(position);
             holder.sensorName.setText(sensor.getName());
             holder.sensorName.setBackground(new ColorDrawable(Color.TRANSPARENT));
-            if (sensor.getType() == Sensor.TYPE_ACCELEROMETER || sensor.getType() == Sensor.TYPE_GYROSCOPE) {
-                holder.sensorName.setBackground(new ColorDrawable(Color.GRAY));
+            if (sensor.getType() == Sensor.TYPE_ACCELEROMETER || sensor.getType() == Sensor.TYPE_LIGHT) {
+                holder.sensorIcon.setImageResource(R.drawable.ic_sensor_on);
+                holder.sensorName.setTextColor(Color.GREEN);
             }
             holder.setSensor(sensor);
 
             holder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    if (sensor.getType() == Sensor.TYPE_GYROSCOPE || sensor.getType() == Sensor.TYPE_ACCELEROMETER) {
+                    if (sensor.getType() == Sensor.TYPE_LIGHT || sensor.getType() == Sensor.TYPE_ACCELEROMETER) {
                         Intent intent = new Intent(view.getContext(), SensorDetailsActivity.class);
                         intent.putExtra("SENSOR_TYPE", sensor.getType());
                         view.getContext().startActivity(intent);

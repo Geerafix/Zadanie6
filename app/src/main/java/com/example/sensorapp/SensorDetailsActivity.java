@@ -46,11 +46,8 @@ public class SensorDetailsActivity extends AppCompatActivity implements SensorEv
                 float zA = sensorValues[2];
                 sensorTextView.setText(getResources().getString(R.string.accelerometer_label,  xA, yA, zA));
                 break;
-            case Sensor.TYPE_GYROSCOPE:
-                float xG = sensorValues[0];
-                float yG = sensorValues[1];
-                float zG = sensorValues[2];
-                sensorTextView.setText(getResources().getString(R.string.gyroscope_label, xG, yG, zG));
+            case Sensor.TYPE_LIGHT:
+                sensorTextView.setText(getResources().getString(R.string.light_label, currentValue));
                 break;
             default:
         }
