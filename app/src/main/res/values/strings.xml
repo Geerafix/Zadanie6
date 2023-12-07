@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">SensorApp</string>
+    <string name="show_subtitle">Show sensors count</string>
+    <string name="hide_subtitle">Hide sensors count</string>
+    <string name="close">Close</string>
+    <string name="sensors_count">Sensor count: %d</string>
+    <string name="missing_sensor">No sensor</string>
+    <string name="Light">"Value: "</string>
+    <string name="accelerometer_label">Accelerometer values: \n\nx: %f, \n\ny: %f, \n\nz: %f</string>
+    <string name="gyroscope_label">Gyroscope values: \n\nx: %f, \n\ny: %f, \n\nz: %f</string>
+    <string name="location_permission_denied">"Permission denied"</string>
+    <string name="location_text">" Latitude: %1$.4f \n Longitude: %2$.4f \n Time: %3$tr"</string>
+    <string name="no_location">No location</string>
+    <string name="location_textview">""</string>
+    <string name="button_info">"Click button to get the recent location"</string>
+    <string name="get_location">Get location</string>
+    <string name="get_address">Get adress</string>
+    <string name="get_address_button">Click button to get address</string>
+    <string name="address_text">"Address: %1$s \nTime: %2$tr"</string>
+    <string name="service_not_available">Service not available</string>
+    <string name="no_addresses_found">No addresses found</string>
+    <string name="location_panel">Location sensor</string>
+
+</resources>
