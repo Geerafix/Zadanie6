@@ -133,7 +133,8 @@ public class SensorActivity extends AppCompatActivity {
         public void onBindViewHolder(@NonNull SensorHolder holder, int position) {
             Sensor sensor = sensorList.get(position);
             holder.sensorName.setText(sensor.getName());
-            holder.sensorName.setBackground(new ColorDrawable(Color.TRANSPARENT));
+            holder.sensorIcon.setImageResource(R.drawable.ic_sensor);
+            holder.sensorName.setTextColor(Color.GRAY);
             if (sensor.getType() == Sensor.TYPE_ACCELEROMETER || sensor.getType() == Sensor.TYPE_LIGHT) {
                 holder.sensorIcon.setImageResource(R.drawable.ic_sensor_on);
                 holder.sensorName.setTextColor(Color.GREEN);
