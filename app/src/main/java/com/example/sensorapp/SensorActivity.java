@@ -144,12 +144,12 @@ public class SensorActivity extends AppCompatActivity {
             holder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    if (sensor.getType() == Sensor.TYPE_LIGHT || sensor.getType() == Sensor.TYPE_ACCELEROMETER) {
-                        Intent intent = new Intent(view.getContext(), SensorDetailsActivity.class);
+                    if (sensor.getType() == Sensor.TYPE_MAGNETIC_FIELD) {
+                        Intent intent = new Intent(view.getContext(), LocationActivity.class);
                         intent.putExtra("SENSOR_TYPE", sensor.getType());
                         view.getContext().startActivity(intent);
-                    } else if (sensor.getType() == Sensor.TYPE_MAGNETIC_FIELD) {
-                        Intent intent = new Intent(view.getContext(), LocationActivity.class);
+                    } else {
+                        Intent intent = new Intent(view.getContext(), SensorDetailsActivity.class);
                         intent.putExtra("SENSOR_TYPE", sensor.getType());
                         view.getContext().startActivity(intent);
                     }

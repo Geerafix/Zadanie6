@@ -12,6 +12,6 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="145dp"
         android:layout_marginVertical="100dp"
-        android:text="TextView" />
+        android:text="@string/missing_sensor" />
 
 </LinearLayout>

@@ -50,6 +50,8 @@ public class SensorDetailsActivity extends AppCompatActivity implements SensorEv
                 sensorTextView.setText(getResources().getString(R.string.light_label, currentValue));
                 break;
             default:
+                sensorTextView.setText(R.string.missing_sensor);
+                break;
         }
     }
 
