@@ -134,7 +134,7 @@ public class SensorActivity extends AppCompatActivity {
             Sensor sensor = sensorList.get(position);
             holder.sensorName.setText(sensor.getName());
             holder.sensorName.setBackground(new ColorDrawable(Color.TRANSPARENT));
-            if (position == 1 || position == 4) {
+            if (sensor.getType() == Sensor.TYPE_ACCELEROMETER || sensor.getType() == Sensor.TYPE_GYROSCOPE) {
                 holder.sensorName.setBackground(new ColorDrawable(Color.GRAY));
             }
             holder.setSensor(sensor);

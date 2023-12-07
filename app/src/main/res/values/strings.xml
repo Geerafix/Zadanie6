@@ -14,7 +14,7 @@
     <string name="location_textview">""</string>
     <string name="button_info">"Click button to get the recent location"</string>
     <string name="get_location">Get location</string>
-    <string name="get_address">Get adress</string>
+    <string name="get_address">Get address</string>
     <string name="get_address_button">Click button to get address</string>
     <string name="address_text">"Address: %1$s \nTime: %2$tr"</string>
     <string name="service_not_available">Service not available</string>

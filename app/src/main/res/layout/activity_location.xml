@@ -9,8 +9,8 @@
 
     <TextView
         android:id="@+id/location_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="311dp"
+        android:layout_height="57dp"
         android:text="@string/location_textview"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,12 +18,22 @@
         app:layout_constraintBottom_toTopOf="@+id/get_location_button"
         app:layout_constraintVertical_bias="0.428" />
 
+    <TextView
+        android:id="@+id/address_textview"
+        android:layout_width="300dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="8dp"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@+id/location_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
     <Button
         android:id="@+id/get_location_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/get_location"
-        app:layout_constraintTop_toBottomOf="@+id/location_text"
+        app:layout_constraintTop_toBottomOf="@+id/address_textview"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -32,9 +42,9 @@
         android:layout_width="244dp"
         android:layout_height="20dp"
         android:text="@string/button_info"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/get_location_button"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/get_location_button" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/get_address_button"
@@ -53,16 +63,5 @@
         app:layout_constraintTop_toBottomOf="@+id/get_address_button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
-
-    <TextView
-        android:id="@+id/address_textview"
-        android:layout_width="319dp"
-        android:layout_height="221dp"
-        android:layout_marginTop="16dp"
-        android:text=""
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

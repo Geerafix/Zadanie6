@@ -119,7 +119,7 @@ public class LocationActivity extends AppCompatActivity {
             Address address = addresses.get(0);
             List<String> addressParts = new ArrayList<>();
 
-            for (int i = 0; i < address.getMaxAddressLineIndex(); i++) {
+            for (int i = 0; i <= address.getMaxAddressLineIndex(); i++) {
                 addressParts.add(address.getAddressLine(i));
             }
 
