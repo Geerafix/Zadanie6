@@ -8,7 +8,7 @@
     <string name="Light">"Value: "</string>
     <string name="accelerometer_label">Accelerometer values: \n\nx: %f, \n\ny: %f, \n\nz: %f</string>
     <string name="gyroscope_label">Gyroscope values: \n\nx: %f, \n\ny: %f, \n\nz: %f</string>
-    <string name="light_label">Light sensor values: \n\n%f</string>
+    <string name="light_label">Light sensor value: \n\n%f</string>
     <string name="location_permission_denied">"Permission denied"</string>
     <string name="location_text">" Latitude: %1$.4f \n Longitude: %2$.4f \n Time: %3$tr"</string>
     <string name="no_location">No location</string>
